@@ -1,0 +1,30 @@
+package parser.lexer
+
+open class Token(open val id : String ,
+                 open val value : Any,
+                 open val indexOfLine : Int,
+                 open val indexOfWord: Int)
+
+data class INT(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)
+
+class PLUS(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)
+
+class MINUS(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)
+
+class MUL(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)
+
+class DIV(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)
+
+class LBRACKET(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)
+
+class RBRACKET(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)
+
+class EXCEPTION(override val id: String,override val value: Any,override val indexOfLine: Int,override val indexOfWord: Int)
+    : Token(id, value, indexOfLine, indexOfWord)

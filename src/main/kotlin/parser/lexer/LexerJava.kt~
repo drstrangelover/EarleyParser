@@ -1,0 +1,66 @@
+package parser.lexer
+
+
+import java.io.IOException;
+
+import java.io.FileReader
+import java.io.BufferedReader
+import java.io.File
+import java.util.*
+
+
+fun String.isNumber() : Boolean {
+    try {
+        Integer.valueOf(this)
+        return true
+    } catch (e : Exception) {
+        return false
+    }
+}
+
+
+fun lexer(sourcePath: String) : List<Token> {
+    val tokens : LinkedList<Token> = LinkedList()
+
+    try {
+
+        val f = File(sourcePath)
+
+        val b = BufferedReader(FileReader(f))
+
+        var currentLine = ""
+
+        var indexOfLine = 1
+        while (true) {
+            currentLine = b.readLine() ?: "//endOfFile"
+            if (currentLine == "//endOfFile") break
+
+            var indexOfWord = 0
+
+            tokens.addAll(currentLine.split(" ").map {
+                indexOfWord++
+                when {
+                    it == "+" -> PLUS("+","+",indexOfLine,indexOfWord)
+                    it == "-" -> MINUS("-","-",indexOfLine,indexOfWord)
+                    it == "*" -> MUL("*","*",indexOfLine,indexOfWord)
+                    it == "/" -> DIV("/","/",indexOfLine,indexOfWord)
+                    it == "(" -> LBRACKET("(","(",indexOfLine,indexOfWord)
+                    it == ")" -> RBRACKET(")",")",indexOfLine,indexOfWord)
+                    it.isNumber() -> INT("INT",it.toInt(),indexOfLine,indexOfWord)
+                    else -> EXCEPTION("EXCEPTION",it,indexOfLine,indexOfWord)
+                }
+
+            })
+
+            indexOfLine++
+        }
+
+
+
+    } catch (e: IOException) {
+        e.printStackTrace()
+    }
+    return tokens
+
+
+}
