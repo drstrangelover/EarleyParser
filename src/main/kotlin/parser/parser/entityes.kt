@@ -120,6 +120,7 @@ fun complete(setOfStates: ArrayList<ArrayList<State>>, i: Int, j: Int, grammar: 
         :ArrayList<ArrayList<State>>{
     val state = setOfStates[i][j]
     setOfStates[state.initialState]
+            .filter { it.rule.body.size > it.nextToken }
             .filter { it.rule.body[it.nextToken].name == state.rule.header.name }
             .forEach {
                 append(setOfStates[i], State(it.rule,

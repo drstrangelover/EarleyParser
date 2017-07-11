@@ -51,7 +51,7 @@ internal fun rangeToUnion(regExp: ArrayList<Token>) : ArrayList<Token> {
             union.add(OperatorToken(')'))
             i += 4
         }
-        union.add(regExp[i])
+        if (regExp.size >= i + 1) union.add(regExp[i])
         i++
     }
 

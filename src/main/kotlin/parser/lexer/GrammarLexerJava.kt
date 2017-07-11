@@ -73,6 +73,7 @@ fun tokenizeGrammar(sourcePath: String) : Grammar {
     var indexOfExpr = 1
 
     for (expression in formatedSource) {
+        var halfTerminal = ""
         var header : Token = Token("temp",-1,-1)
         val body    = ArrayList<Token>()
         val words = expression.patternSplit(" +")
@@ -82,22 +83,24 @@ fun tokenizeGrammar(sourcePath: String) : Grammar {
                 continue
             }
             if (indexOfWord == 1) continue
-            if (!word.isNumber() && !listOf("(",")","+","-","*","/").contains(word)) {
-                body.add(NonTerminal(word,indexOfExpr,indexOfWord))
+
+
+            if (word.match("'.*'")) {
+                body.add(Terminal(word.drop(1).dropLast(1),word.drop(1).dropLast(1),indexOfExpr,indexOfWord))
                 continue
             }
-            body.add(
-                    when {
-                        word == "+" -> Terminal("summinus", word, indexOfExpr, indexOfWord)
-                        word == "-" -> Terminal("summinus", word, indexOfExpr, indexOfWord)
-                        word == "*" -> Terminal("divmul", word, indexOfExpr, indexOfWord)
-                        word == "/" -> Terminal("divmul", word, indexOfExpr, indexOfWord)
-                        word == "(" -> Terminal("lparen", word, indexOfExpr, indexOfWord)
-                        word == ")" -> Terminal("rparen", word, indexOfExpr, indexOfWord)
-                        word.isNumber() -> Terminal("int", word.toInt(), indexOfExpr, indexOfWord)
-                        else -> NoSuchToken(word, indexOfExpr, indexOfWord)
-                    }
-            )
+
+            if (word.match("'.*")) {
+                halfTerminal = word
+                continue
+            }
+
+            if (word.match(".*'")) {
+                body.add(Terminal("$halfTerminal ${word.dropLast(1)}","$halfTerminal ${word.dropLast(1)}",indexOfExpr,indexOfWord))
+                continue
+            }
+
+            body.add(NonTerminal(word,indexOfExpr,indexOfWord))
         }
         indexOfExpr++
 

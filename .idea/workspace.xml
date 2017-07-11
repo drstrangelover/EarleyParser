@@ -2,136 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b2d54b-16f1-4778-9814-24b3faafd00f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/InfixToPostfix.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/RegExp.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/Tokens.kt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/AcceptableState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/CatenationState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/Fragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/InfixToPrefixKt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/NFA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/RegExpKt$main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/RegExpKt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/SplitState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/java/main/regexp/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/RegExpKt$main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/regexp/AcceptableState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/regexp/CatenationState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/regexp/Fragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/regexp/InfixToPrefixKt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/regexp/NFA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/regexp/SplitState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/parser/regexp/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/AcceptableState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/CatenationState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/Fragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/InfixToPrefixKt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/NFA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/RegExpKt$main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/RegExpKt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/SplitState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/regexp/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/RegExp.sublime-workspace" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/InfixToPrefix.kt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/java/main/META-INF/parser_main.kotlin_module" afterPath="$PROJECT_DIR$/build/classes/java/main/META-INF/parser_main.kotlin_module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/META-INF/parser.kotlin_module" afterPath="$PROJECT_DIR$/build/classes/main/META-INF/parser.kotlin_module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/parser/RegExpKt.class" afterPath="$PROJECT_DIR$/build/classes/main/parser/RegExpKt.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/parser/lexer/GrammarLexerJavaKt.class" afterPath="$PROJECT_DIR$/build/classes/main/parser/lexer/GrammarLexerJavaKt.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/parser/lexer/LexerJavaKt.class" afterPath="$PROJECT_DIR$/build/classes/main/parser/lexer/LexerJavaKt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/parser/lexer/Terminal.class" afterPath="$PROJECT_DIR$/build/classes/main/parser/lexer/Terminal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/parser/parser/EntityesKt.class" afterPath="$PROJECT_DIR$/build/classes/main/parser/parser/EntityesKt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin-build/caches/artifact-difference.tab" afterPath="$PROJECT_DIR$/build/kotlin-build/caches/artifact-difference.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin-build/caches/artifact-difference.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin-build/caches/artifact-difference.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/META-INF/parser_main.kotlin_module" afterPath="$PROJECT_DIR$/build/kotlin-classes/main/META-INF/parser_main.kotlin_module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/class-fq-name-to-source.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/internal-name-to-source.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/package-parts.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/proto.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-classes.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/source-to-output.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/subtypes.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/increCache.parser_main/kotlin/supertypes.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/file-to-id.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/id-to-file.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.len" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.values.at" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab_i" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/lookups.tab_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/sync/kotlin-files-in-java-timestamps.bin" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/sync/kotlin-files-in-java-timestamps.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/parser.jar" afterPath="$PROJECT_DIR$/build/libs/parser.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/counters.tab" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches/lookups/counters.tab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser.iml" afterPath="$PROJECT_DIR$/parser.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/RegExp.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/RegExp.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/lexer/LexerJava.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/lexer/LexerJava.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/lexer/Tokens.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/lexer/Tokens.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/NFA.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/NFA.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/States.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/States.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/InfixToPostfix.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/parser/regexp/InfixToPostfix.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -163,7 +44,7 @@
       <file leaf-file-name="RegExp.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/RegExp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="289">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#16#138#0" expanded="true" />
@@ -175,51 +56,9 @@
       <file leaf-file-name="LexerJava.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/LexerJava.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="277">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GRAMMAR.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="source.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GrammarLexerJava.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entityes.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="61" column="25" lean-forward="false" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="83" />
-              <folding>
-                <element signature="e#23#200#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -227,18 +66,38 @@
       <file leaf-file-name="InfixToPostfix.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/InfixToPostfix.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1224">
+            <state relative-caret-position="-1693">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="GRAMMAR.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="States.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/States.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NFA.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/NFA.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -247,19 +106,41 @@
       <file leaf-file-name="RegExp.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/RegExp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="-499">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tokens.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/Tokens.kt">
+      <file leaf-file-name="source.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrammarLexerJava.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entityes.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="122" column="39" lean-forward="false" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+              <folding>
+                <element signature="e#23#200#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -294,6 +175,7 @@
       <find>try</find>
       <find>root</find>
       <find>funcname</find>
+      <find>value</find>
     </findStrings>
     <replaceStrings>
       <replace>indexOfWord</replace>
@@ -644,12 +526,12 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/parser/regexp/RegExp.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/parser/RegExp.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/parser/lexer/LexerJava.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt" />
       </list>
     </option>
   </component>
@@ -690,6 +572,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kotlin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -862,6 +766,7 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/parser" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/parser/data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1304,12 +1209,12 @@
       <workItem from="1499387526222" duration="591000" />
       <workItem from="1499421789315" duration="15700000" />
       <workItem from="1499493772275" duration="55000" />
-      <workItem from="1499761059756" duration="6296000" />
+      <workItem from="1499761059756" duration="15418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100750000" />
+    <option name="totallyTimeSpent" value="109872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="31" width="1932" height="1055" extended-state="6" />
@@ -1327,7 +1232,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6572973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46054053" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1364,8 +1269,20 @@
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/LexerJava.kt</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="174" />
+      <option name="time" value="198" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1374,14 +1291,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1623,34 +1532,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/NFA.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/States.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/Tokens.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/RegExp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1663,54 +1548,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/regexp/NFA.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="61" column="25" lean-forward="false" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="83" />
-          <folding>
-            <element signature="e#23#200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/InfixToPostfix.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/RegExp.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/NFA.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/LexerJava.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="397">
+          <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/RegExp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="-499">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/InfixToPostfix.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1693">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1718,7 +1583,59 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/source.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/regexp/States.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/parser/entityes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="122" column="39" lean-forward="false" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+          <folding>
+            <element signature="e#23#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/LexerJava.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/lexer/GrammarLexerJava.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/RegExp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/parser/data/GRAMMAR.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>

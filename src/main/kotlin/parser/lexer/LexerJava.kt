@@ -2,6 +2,7 @@
 package parser.lexer
 
 
+import regexp.match
 import regexp.patternSplit
 import java.io.*
 
@@ -9,7 +10,9 @@ import java.util.*
 
 
 
-fun tokenizeSource(sourcePath: String,separator: String) : List<Token> {
+fun tokenizeSource(sourcePath: String,grammarObject: Grammar) : List<Token> {
+    val separator = grammarObject.separator
+    val grammar = grammarObject.grammar
     val tokens : LinkedList<Token> = LinkedList()
 
     try {
@@ -27,20 +30,26 @@ fun tokenizeSource(sourcePath: String,separator: String) : List<Token> {
             if (currentLine == "//endOfFile") break
 
 
-            tokens.addAll(currentLine.patternSplit(separator).map {
+            loop@ for(currentWord in currentLine.patternSplit(separator)) {
                 indexOfWord++
-                when {
-                    it == "+" -> Terminal("summinus",it,indexOfLine,indexOfWord)
-                    it == "-" -> Terminal("summinus",it,indexOfLine,indexOfWord)
-                    it == "*" -> Terminal("divmul",it,indexOfLine,indexOfWord)
-                    it == "/" -> Terminal("divmul",it,indexOfLine,indexOfWord)
-                    it == "(" -> Terminal("lparen",it,indexOfLine,indexOfWord)
-                    it == ")" -> Terminal("rparen",it,indexOfLine,indexOfWord)
-                    it.isNumber() -> Terminal("int",it.toInt(),indexOfLine,indexOfWord)
-                    else -> NoSuchToken(it,indexOfLine,indexOfWord)
+
+                for ((index,rule) in grammar.withIndex()) {
+                    for (token in rule.body) {
+                        if (token is Terminal) {
+                            if (currentWord.match(token.value as String)) {
+                              tokens.add(Terminal(token.value as String,currentWord,indexOfLine,indexOfWord))
+                                continue@loop
+                            }
+                        }
+                    }
+                    if (grammar.size - 1 == index) {
+                       tokens.add(NoSuchToken(currentWord,indexOfLine,indexOfWord))
+                    }
                 }
 
-            })
+
+
+            }
 
             indexOfLine++
         }

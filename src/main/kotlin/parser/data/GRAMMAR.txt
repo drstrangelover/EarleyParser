@@ -1,14 +1,91 @@
-:root   = sum
-sum     = sum     + product
-sum     = product
-product = product * factor
+:root = sum
+sum = sum PLUS product
+sum = product
+product = product MUL factor
 product = factor
-factor  = ( sum )
-factor  = number
-number  = 1 number
-number  = 1
+factor = number
+factor = LPAREN sum RPAREN
+number = DIGIT
+number = DIGIT NUMBER
+LPAREN = '\\('
+RPAREN = '\\)'
+PLUS = '\\+|-'
+MUL = '\\*|/'
+DIGIT = '[09]'
 :separator = ' +'
 //EndOfFile
+
+:root = sum
+sum = sum PLUS product
+sum = product
+product = product MUL factor
+product = factor
+factor = number
+factor = LPAREN sum RPAREN
+number = DIGIT
+number = DIGIT NUMBER
+LPAREN = '\\('
+RPAREN = '\\)'
+PLUS = '\\+|-'
+MUL = '\\*|/'
+DIGIT = '[09]'
+:separator = ' +'
+
+
+:root = sum
+sum = sum '\\+|-' product
+sum = product
+product = product '\\*|/' factor
+product = factor
+factor = '\\(' sum '\\)'
+factor = number
+number = '[09]' NUMBER
+number = '[09]'
+:separator = ' +'
+
+:root = sum
+sum = sum PLUS product
+sum = product
+product = product MUL factor
+product = factor
+factor = number
+factor = LPAREN sum RPAREN
+number = DIGIT
+number = DIGIT NUMBER
+LPAREN = '\\('
+RPAREN = '\\)'
+PLUS = '\\+|-'
+MUL = '\\*|/'
+DIGIT = '[09]'
+:separator = ' +'
+
+
+
+:root = sum
+sum = sum  MINUS product
+sum = sum PLUS product
+sum = product
+product = product MUL factor
+product = product DIV factor
+product = factor
+factor = number
+factor = LPAREN sum RPAREN
+number = MINUS DIGIT
+number = DIGIT
+number = DIGIT NUMBER
+LPAREN = '\\('
+RPAREN = '\\)'
+PLUS = '\\+'
+MINUS = '-'
+MUL = '\\*'
+DIV = '/'
+DIGIT = '[09]'
+:separator = ' +'
+
+
+
+
+
 
 
 
