@@ -2,6 +2,10 @@ package parser.lexer
 
 
 import parser.parser.Rule
+import regexp.findFirst
+import regexp.findLast
+import regexp.match
+import regexp.patternSplit
 import java.io.*
 
 import java.util.*
@@ -18,62 +22,93 @@ fun String.isNumber() : Boolean {
 }
 
 
-fun tokenizeGrammar(sourcePath: String) : ArrayList<Rule> {
+class Grammar(val separator: String, val root: String, val grammar: ArrayList<Rule>)
+
+
+
+fun tokenizeGrammar(sourcePath: String) : Grammar {
+    var separator = " +"
+    var root      = ""
+    val sourceGrammar = arrayListOf<String>()
+    val formatedSource = arrayListOf<String>()
     val grammar : ArrayList<Rule> = ArrayList()
 
     try {
-
         val sourceFile = File(sourcePath)
-
         val bufferReader = BufferedReader(FileReader(sourceFile) as Reader?)
-
         var currentLine = ""
-
-
-
-        var indexOfLine = 1
         while (true) {
             currentLine = bufferReader.readLine() ?: "//EndOfFile"
             if (currentLine == "//EndOfFile") break
 
-            var header : Token = Token("temp",-1,-1)
-            val body    = ArrayList<Token>()
-            val words = currentLine.split(" ")
-            for ((indexOfWord,word )in words.withIndex()) {
-                if (indexOfWord == 0) {
-                    header = NonTerminal(word,indexOfLine,indexOfWord)
-                    continue
-                }
-                if (indexOfWord == 1) continue
-                if (!word.isNumber() && !listOf("(",")","+","-","*","/").contains(word)) {
-                    body.add(NonTerminal(word,indexOfLine,indexOfWord))
-                    continue
-                }
-                body.add(
-                        when {
-                            word == "+" -> Terminal("SUM", word, indexOfLine, indexOfWord)
-                            word == "-" -> Terminal("MINUS", word, indexOfLine, indexOfWord)
-                            word == "*" -> Terminal("MUL", word, indexOfLine, indexOfWord)
-                            word == "/" -> Terminal("DIV", word, indexOfLine, indexOfWord)
-                            word == "(" -> Terminal("LPAREN", word, indexOfLine, indexOfWord)
-                            word == ")" -> Terminal("RPAREN", word, indexOfLine, indexOfWord)
-                            word.isNumber() -> Terminal("INT", word.toInt(), indexOfLine, indexOfWord)
-                            else -> NoSuchToken(word, indexOfLine, indexOfWord)
-                        }
-                )
+            else if (currentLine.match(":separator.*")) {
+                separator = currentLine.findFirst("\'.*\'").drop(1).dropLast(1)
+                sourceGrammar.add("")
+            } else if (currentLine.match(":root.*")) {
+                root = currentLine.findLast("= *(^ )+").drop(1).dropWhile { it == ' ' }
+                sourceGrammar.add("")
+            } else {
+                sourceGrammar.add(currentLine)
             }
-            indexOfLine++
+        }
+    } catch (e: IOException) {
+        e.printStackTrace()
+    }
+
+    var i = -1
+    for ( line in sourceGrammar) {
+        if (line == "") continue
+        if (line.match("(^  )+ *=.*")) {
+            throw Exception("Declaration of assignment should be at the very begging of the line")
+        }
+        if (line.match(".*^=.*")) {
+            formatedSource.add(line)
+            i++
+            continue
+        }
+        formatedSource[i] += " $line"
+    }
 
 
-            grammar.add(Rule(header,body))
+    var indexOfExpr = 1
+
+    for (expression in formatedSource) {
+        var header : Token = Token("temp",-1,-1)
+        val body    = ArrayList<Token>()
+        val words = expression.patternSplit(" +")
+        for ((indexOfWord,word )in words.withIndex()) {
+            if (indexOfWord == 0) {
+                header = NonTerminal(word,indexOfExpr,indexOfWord)
+                continue
+            }
+            if (indexOfWord == 1) continue
+            if (!word.isNumber() && !listOf("(",")","+","-","*","/").contains(word)) {
+                body.add(NonTerminal(word,indexOfExpr,indexOfWord))
+                continue
+            }
+            body.add(
+                    when {
+                        word == "+" -> Terminal("summinus", word, indexOfExpr, indexOfWord)
+                        word == "-" -> Terminal("summinus", word, indexOfExpr, indexOfWord)
+                        word == "*" -> Terminal("divmul", word, indexOfExpr, indexOfWord)
+                        word == "/" -> Terminal("divmul", word, indexOfExpr, indexOfWord)
+                        word == "(" -> Terminal("lparen", word, indexOfExpr, indexOfWord)
+                        word == ")" -> Terminal("rparen", word, indexOfExpr, indexOfWord)
+                        word.isNumber() -> Terminal("int", word.toInt(), indexOfExpr, indexOfWord)
+                        else -> NoSuchToken(word, indexOfExpr, indexOfWord)
+                    }
+            )
+        }
+        indexOfExpr++
+
+
+        grammar.add(Rule(header,body))
 
 
         }
 
-    } catch (e: IOException) {
-        e.printStackTrace()
-    }
-    return grammar
+
+    return Grammar(separator,root,grammar)
 
 
 }

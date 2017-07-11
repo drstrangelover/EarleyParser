@@ -2,13 +2,14 @@
 package parser.lexer
 
 
+import regexp.patternSplit
 import java.io.*
 
 import java.util.*
 
 
 
-fun tokenizeSource(sourcePath: String) : List<Token> {
+fun tokenizeSource(sourcePath: String,separator: String) : List<Token> {
     val tokens : LinkedList<Token> = LinkedList()
 
     try {
@@ -26,16 +27,16 @@ fun tokenizeSource(sourcePath: String) : List<Token> {
             if (currentLine == "//endOfFile") break
 
 
-            tokens.addAll(currentLine.split(" ").map {
+            tokens.addAll(currentLine.patternSplit(separator).map {
                 indexOfWord++
                 when {
-                    it == "+" -> Terminal("SUM",it,indexOfLine,indexOfWord)
-                    it == "-" -> Terminal("MINUS",it,indexOfLine,indexOfWord)
-                    it == "*" -> Terminal("MUL",it,indexOfLine,indexOfWord)
-                    it == "/" -> Terminal("DIV",it,indexOfLine,indexOfWord)
-                    it == "(" -> Terminal("LPAREN",it,indexOfLine,indexOfWord)
-                    it == ")" -> Terminal("RPAREN",it,indexOfLine,indexOfWord)
-                    it.isNumber() -> Terminal("INT",it.toInt(),indexOfLine,indexOfWord)
+                    it == "+" -> Terminal("summinus",it,indexOfLine,indexOfWord)
+                    it == "-" -> Terminal("summinus",it,indexOfLine,indexOfWord)
+                    it == "*" -> Terminal("divmul",it,indexOfLine,indexOfWord)
+                    it == "/" -> Terminal("divmul",it,indexOfLine,indexOfWord)
+                    it == "(" -> Terminal("lparen",it,indexOfLine,indexOfWord)
+                    it == ")" -> Terminal("rparen",it,indexOfLine,indexOfWord)
+                    it.isNumber() -> Terminal("int",it.toInt(),indexOfLine,indexOfWord)
                     else -> NoSuchToken(it,indexOfLine,indexOfWord)
                 }
 

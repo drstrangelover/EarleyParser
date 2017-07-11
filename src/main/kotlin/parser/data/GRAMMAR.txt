@@ -1,12 +1,126 @@
-SUM = SUM + PRODUCT
-SUM = PRODUCT
-PRODUCT = PRODUCT * FACTOR
-PRODUCT = FACTOR
-FACTOR = ( SUM )
-FACTOR = NUMBER
-NUMBER = 1 NUMBER
-NUMBER = 1
+:root   = sum
+sum     = sum     + product
+sum     = product
+product = product * factor
+product = factor
+factor  = ( sum )
+factor  = number
+number  = 1 number
+number  = 1
+:separator = ' +'
 //EndOfFile
+
+
+
+
+
+
+
+
+:root   = sum
+sum     = sum     + product | product
+product = product * factor | factor
+factor  = ( sum ) | number
+number  = 1 number | 1
+:separator = ' +'
+
+
+
+
+:root   = sum
+sum     = sum     + product
+sum     = product
+product = product * factor
+product = factor
+factor  = ( sum )
+factor  = number
+number  = 1 number
+number  = 1
+:separator = ' +'
+
+:root = sum
+sum = sum  MINUS product
+sum = sum PLUS product
+sum = product
+product = product MUL factor
+product = product DIV factor
+product = factor
+factor = number
+factor = LPAREN sum RPAREN
+number = MINUS DIGIT
+number = DIGIT
+number = DIGIT NUMBER
+LPAREN = '('
+RPAREN = ')'
+PLUS = '+'
+MINUS = '-'
+MUL = '*'
+DIV = '/'
+DIGIT = '[09]'
+:separator = ' *'
+
+
+
+
+:root = sum
+sum = sum (PLUS | MINUS) product | product
+product = product (MUL | DIV) factor | factor
+factor = number | LPAREN sum RPAREN
+number = MINUS DIGIT | DIGIT | DIGIT NUMBER
+LPAREN = '('
+RPAREN = ')'
+PLUS = '+'
+MINUS = '-'
+MUL = '*'
+DIV = '/'
+DIGIT = [09]
+:separator = ' *'
+
+
+
+:root = sum
+sum = product ((PLUS | MINUS) product) *
+product = factor ((MUL | DIV) factor) *
+factor = number | LPAREN sum RPAREN
+number = MINUS? DIGIT
+LPAREN = '('
+RPAREN = ')'
+PLUS = '+'
+MINUS = '-'
+MUL = '*'
+DIV = '/'
+DIGIT = [09]
+:separator = ' *'
+
+
+
+
+
+
+sumExpression: multiplyingExpression ((PLUS | MINUS) multiplyingExpression)*
+multiplyingExpression   : atom ((TIMES | DIV) atom)*
+atom: number| LPAREN expression RPAREN
+number: MINUS? DIGIT + (POINT DIGIT +)?
+LPAREN: '('
+RPAREN: ')'
+PLUS: '+'
+MINUS: '-';
+TIMES: '*';
+DIV: '/' ;
+
+POINT: '.'  ;
+
+DIGIT: ('0' .. '9') ;
+
+
+
+
+
+
+
+
+\s = space
+\d = digit
 
 
 SUM     = SUM     [+-] PRODUCT  | PRODUCT

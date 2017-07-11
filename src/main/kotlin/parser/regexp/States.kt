@@ -1,15 +1,11 @@
-package parser.regexp
+package regexp
 
 
 internal interface  State {
     fun addTo(states: MutableList<State>)
-    fun transaction(char: Char, states: MutableList<State>)
+    fun transaction(inputChar: Char, states: MutableList<State>)
     fun setNextState(state: State)
 }
-
-
-
-
 
 
 internal class AcceptableState : State {
@@ -17,14 +13,14 @@ internal class AcceptableState : State {
         states.add(this)
     }
 
-    override fun transaction(char: Char, states: MutableList<State>) {}
+    override fun transaction(inputChar: Char, states: MutableList<State>) {}
     override fun setNextState(state: State) {}
 }
 
 
 
 
-internal class CatenationState(var inputChar: Char ) : State {
+internal class CatenationState(var regexToken: Token ) : State {
     lateinit var nextState1: State
 
 
@@ -32,17 +28,19 @@ internal class CatenationState(var inputChar: Char ) : State {
         states.add(this)
     }
 
-    override fun transaction(char: Char, states: MutableList<State>) {
-        if (inputChar == char) {
+    override fun transaction(inputChar: Char, states: MutableList<State>) {
+        if ((regexToken is ExceptOperandToken && regexToken.value != inputChar)
+               || regexToken is AnyOperandToken
+                || (regexToken.value == inputChar && regexToken !is ExceptOperandToken)) {
             nextState1.addTo(states)
         }
+
     }
 
     override fun setNextState(state: State) {
         nextState1 = state
     }
 }
-
 
 
 
@@ -56,8 +54,8 @@ internal class SplitState : State {
         nextState2.addTo(states)
     }
 
-    override fun transaction(char: Char, states: MutableList<State>) {
-        throw IllegalArgumentException("Illegal regExp")
+    override fun transaction(inputChar: Char, states: MutableList<State>) {
+        throw IllegalArgumentException("Illegal regExp") as Throwable
     }
 
     override fun setNextState(state: State) {

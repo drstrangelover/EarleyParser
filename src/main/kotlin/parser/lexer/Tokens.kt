@@ -36,7 +36,7 @@ class EndOfFile(override val name: String,
 
 
 class MetaToken(override val name: String,
-                override val value: ArrayList<String>,
+                override val value: ArrayList<Terminal>,
                 override val indexOfLine: Int,
                 override val indexOfWord: Int)
     : Terminal(name, value, indexOfLine, indexOfWord)

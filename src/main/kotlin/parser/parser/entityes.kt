@@ -58,12 +58,14 @@ fun append(setOfStates: ArrayList<State>, state: State) {
 }
 
 
-fun buildEarleyItems(input: LinkedList<Token>): ArrayList<ArrayList<State>> {
-    val grammar : ArrayList<Rule> = tokenizeGrammar("src/main/kotlin/parser/data/GRAMMAR.txt")
+fun buildStates(input: LinkedList<Token>): ArrayList<ArrayList<State>> {
+    val grammarObject  = tokenizeGrammar("src/main/kotlin/parser/data/GRAMMAR.txt")
+    val grammar = grammarObject.grammar
+
 
     var setOfStates : ArrayList<ArrayList<State>> = arrayListOf(arrayListOf())
     grammar
-            .filter { it.header.name == "SUM" }
+            .filter { it.header.name == "sum" }
             .forEach { setOfStates[0].add(State(it,0,0)) }
 
 
