@@ -1,4 +1,4 @@
-package parser.lexer
+package earleyParser.lexer
 
 open class Token(open val name: String,
                  open val indexOfLine : Int,

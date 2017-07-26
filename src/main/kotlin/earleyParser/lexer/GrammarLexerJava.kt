@@ -1,14 +1,13 @@
-package parser.lexer
+package earleyParser.lexer
 
 
-import parser.parser.Rule
+import earleyParser.parser.Rule
 import regexp.findFirst
 import regexp.findLast
 import regexp.match
 import regexp.patternSplit
 import java.io.*
 
-import java.util.*
 import kotlin.collections.ArrayList
 
 

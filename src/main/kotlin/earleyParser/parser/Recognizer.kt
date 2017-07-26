@@ -1,9 +1,9 @@
-package parser.parser
+package earleyParser.parser
 
-import parser.lexer.NonTerminal
-import parser.lexer.Terminal
-import parser.lexer.Token
-import parser.lexer.tokenizeGrammar
+import earleyParser.lexer.NonTerminal
+import earleyParser.lexer.Terminal
+import earleyParser.lexer.Token
+import earleyParser.lexer.tokenizeGrammar
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -17,7 +17,7 @@ data class Rule(val header: Token,val body: ArrayList<Token>) {
                 if ((token is Terminal && this.body[index] is Terminal) ||
                         (token is NonTerminal && this.body[index] is NonTerminal)) {
                     if (this.body[index] is Terminal && token is Terminal) {
-                        if (!token.value.equals((this.body[index] as Terminal).value)) return false
+                        if (token.value != (this.body[index] as Terminal).value) return false
                     }
                     return true
                 }
@@ -27,7 +27,7 @@ data class Rule(val header: Token,val body: ArrayList<Token>) {
     }
 
     fun equals(rule: Rule): Boolean {
-        if (this.header.name.equals(rule.header.name) &&
+        if (this.header.name == rule.header.name &&
                 isBodyEquals(rule.body)) {
             return true
         }
@@ -36,12 +36,15 @@ data class Rule(val header: Token,val body: ArrayList<Token>) {
 }
 
 
-data class State(
-        val rule: Rule,
-        val initialState: Int,
-        var nextToken: Int) {
+open class State(
+        open var id: Int,
+        open val childrens: ArrayList<Int>,
+        open val rule: Rule,
+        open val initialChart: Int,
+        open var finalChart: Int,
+        open var nextToken: Int) {
     fun equals(state: State): Boolean {
-        if (this.rule.equals(state.rule) && this.initialState == state.initialState
+        if (this.rule.equals(state.rule) && this.initialChart == state.initialChart
                 && this.nextToken == state.nextToken) {
             return true
         }
@@ -49,32 +52,33 @@ data class State(
     }
 }
 
-
+var id = 0
 fun append(setOfStates: ArrayList<State>, state: State) {
+    state.id = id
     for (stateToCompare in setOfStates) {
         if (stateToCompare.equals(state)) return Unit
     }
     setOfStates.add(state)
+    id++
 }
 
 
 fun buildStates(input: LinkedList<Token>): ArrayList<ArrayList<State>> {
-    val grammarObject  = tokenizeGrammar("src/main/kotlin/parser/data/GRAMMAR.txt")
+    val grammarObject  = tokenizeGrammar("src/main/kotlin/earleyParser/data/GRAMMAR.txt")
     val grammar = grammarObject.grammar
 
 
     var setOfStates : ArrayList<ArrayList<State>> = arrayListOf(arrayListOf())
     grammar
             .filter { it.header.name == "sum" }
-            .forEach { setOfStates[0].add(State(it,0,0)) }
-
+            .forEach { append(setOfStates[0],State(-1, arrayListOf(),it,0,0,0)) }
 
     var i = 0
     while (i < setOfStates.size) {
         var j = 0
         while (j < setOfStates[i].size) {
             if (setOfStates[i][j].rule.body.size == setOfStates[i][j].nextToken ) {
-                setOfStates = complete(setOfStates,i,j,grammar)
+                setOfStates = complete(setOfStates,i,j)
                 j++
                 continue
             }
@@ -95,11 +99,10 @@ fun buildStates(input: LinkedList<Token>): ArrayList<ArrayList<State>> {
 
 fun predict(setOfStates: ArrayList<ArrayList<State>>, index: Int, nextToken: Token, grammar: ArrayList<Rule>)
          :ArrayList<ArrayList<State>>{
-    val currentEarleyItems = setOfStates[index]
+    val state = setOfStates[index]
     grammar
-            .filter {it.header.name.equals(nextToken.name)}
-            .forEach { append(currentEarleyItems, State(it,index,0)) }
-    setOfStates[index] = currentEarleyItems
+            .filter { it.header.name == nextToken.name }
+            .forEach { append(state, State(-1, arrayListOf(),it,index,index,0)) }
     return setOfStates
 }
 
@@ -111,23 +114,27 @@ fun scan(setOfStates: ArrayList<ArrayList<State>>, i: Int, j: Int, nextToken: To
     val state = setOfStates[i][j]
     if (input[i].name == state.rule.body[state.nextToken].name) {
         if (setOfStates.size == i + 1) setOfStates.add(arrayListOf<State>())
-        setOfStates[i+1].add(State(state.rule,state.initialState,state.nextToken + 1))
+        append(setOfStates[i+1],State(-1, arrayListOf(),state.rule,state.initialChart,i,state.nextToken + 1))
     }
     return setOfStates
 }
 
-fun complete(setOfStates: ArrayList<ArrayList<State>>, i: Int, j: Int, grammar: ArrayList<Rule>)
+fun complete(setOfStates: ArrayList<ArrayList<State>>, i: Int, j: Int)
         :ArrayList<ArrayList<State>>{
     val state = setOfStates[i][j]
-    setOfStates[state.initialState]
+    setOfStates[state.initialChart]
             .filter { it.rule.body.size > it.nextToken }
             .filter { it.rule.body[it.nextToken].name == state.rule.header.name }
             .forEach {
-                append(setOfStates[i], State(it.rule,
-                        it.initialState,
+                val childrens: ArrayList<Int> = it.childrens
+
+                     childrens.add(state.id)
+
+
+                append(setOfStates[i], State(-1,childrens,it.rule,
+                        it.initialChart,i,
                         it.nextToken + 1))
             }
     return setOfStates
 }
-
 

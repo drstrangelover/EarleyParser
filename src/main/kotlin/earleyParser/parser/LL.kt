@@ -1,6 +1,6 @@
 //package parser.parser
 //
-//import parser.lexer.*
+//import earleyParser.lexer.*
 //
 //
 //// support only ( ) + *

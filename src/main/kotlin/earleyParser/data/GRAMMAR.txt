@@ -1,0 +1,15 @@
+:root = sum
+sum = sum PLUS product
+sum = product
+product = product MUL factor
+product = factor
+factor = LPAREN sum RPAREN
+factor = number
+number = DIGIT
+LPAREN = '\\('
+RPAREN = '\\)'
+PLUS = '\\+|-'
+MUL = '\\*|/'
+DIGIT = '[09]'
+:separator = ' +'
+//EndOfFile

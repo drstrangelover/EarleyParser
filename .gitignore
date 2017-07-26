@@ -1,1 +1,3 @@
 # Created by .ignore support plugin (hsz.mobi)
+src/main/kotlin/earleyParser/parser/Elizabeth.kt
+src/main/kotlin/earleyParser/parser/LL.kt

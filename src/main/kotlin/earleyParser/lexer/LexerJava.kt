@@ -1,5 +1,5 @@
 
-package parser.lexer
+package earleyParser.lexer
 
 
 import regexp.match
