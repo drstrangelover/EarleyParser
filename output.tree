@@ -1,0 +1,1 @@
+(sum (product (product (factor (number (DIGIT "1"))))(MUL "*")(factor (LPAREN "(")(sum (sum (product (factor (number (DIGIT "2")))))(PLUS "+")(product (factor (number (DIGIT "3")))))(RPAREN ")"))))
